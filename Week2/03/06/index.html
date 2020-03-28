@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06</title>
+</head>
+<body>
+    <a href="https://programming.in.th/task/rev2_problem.php?pid=0006" target="_blank">Link 06[0000 : A+B Problem]</a><hr>
+    a : <input type="text" id="a"><br>
+    b : <input type="text" id="b"><br>
+    <br>
+    <button type="button" onclick="sum()" >sum</button><br>
+    <p id="total"></p> 
+    <script>
+        const sum = () =>{
+            let a = parseInt(document.getElementById('a').value);
+            let b = parseInt(document.getElementById('b').value);
+            let total = a + b;  
+            document.getElementById('total').innerText = 'Total : ' + total
+        }
+    </script>
+</body>
+</html>
