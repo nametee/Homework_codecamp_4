@@ -11,6 +11,7 @@
 >- ข้อมูลอาจารย์ “INSTRUCTOR” จะมีเก็บข้อมูล ชื่อ-นามสกุล ภาษาไทย/อังกฤษ ตำแหน่งทางวิชาการ วุฒิการศึกษา ความเชี่ยวชาญ วิชาที่สอน 
 >- อาจารย์แต่ละคนจะเป็นที่ปรึกษานิสิตไม่เกิน 40 คน และนิสิตแต่ละคนมีอาจารย์ที่ปรึกษาได้ที่ละ 1 คน (อาจจะเปลี่ยนอาจารย์ที่ปรึกษาในภายหลังได้) 
 >- นิสิตไม่สามารถลงทะเบียนเกิน 21 หน่วยกิตได้ นิสิตไม่สามารถลงวิชาของหลักสูตรคณะอื่นได้
+
 **1.  ออกแบบ Conceptual Data Model ของ มหาวิทยาลัย Codecamp XI ตาม 5 ขั้นตอน ([link](https://docs.google.com/presentation/d/1xP-jRml2ppYgZD1Ur5qmP8VZOaIrzPcSbw1dpc-qYlw/edit#slide=id.g6fbf43425a_0_147))**
 	1.  Entities and Simple Attributes
 	2.  Multi-Valued Attributes 
@@ -18,6 +19,7 @@
 	4.  1:N Relationships 
 	5.  N:N Relationships 
 	>	เสร็จแล้วสรุปผลลออกมาเป็น Data Model 
+	
 **2.  ออกแบบ Logical Data Model ของ มหาวิทยาลัย Codecamp XI ([link](https://docs.google.com/presentation/d/1xP-jRml2ppYgZD1Ur5qmP8VZOaIrzPcSbw1dpc-qYlw/edit#slide=id.g6fbf43425a_0_169))** 
 
 **3.  ([link](https://docs.google.com/presentation/d/1xP-jRml2ppYgZD1Ur5qmP8VZOaIrzPcSbw1dpc-qYlw/edit#slide=id.g6fbf43425a_0_520))**
