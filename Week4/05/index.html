@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Week 4 / 05</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="root2"></div> 
+    <script type="text/babel">  
+        class App extends React.Component {
+            render = () => <h1>Hello React!</h1>
+        } 
+
+        class App2 extends React.Component {
+            render = () => <h2>Hello World!</h2> 
+        }  
+        ReactDOM.render(<App />,document.getElementById('root'))
+        ReactDOM.render(<App2 />,document.getElementById('root2'))
+    </script>
+</body>
+</html>

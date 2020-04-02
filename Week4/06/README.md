@@ -1,0 +1,12 @@
+# CodeCamp 4
+
+### นาย ภคิน พีรธนวณิช  [ *nametee@gmail.com* ]
+### HOMEWORK WEEK 4
+
+**Week 4 part 2**
+ 
+**6.สร้าง postcard บอกรักโดยใช้ JSX (มีเงื่อนไขเพิ่มเติม อ่านตาม Link )**
+
+L.O.V.E 
+[Link](https://docs.google.com/presentation/d/1BeUOAMK6JXIS7EGssoFaD43qTD87tA3BlAfJfPmSR5A/edit#slide=id.g6b2204c28f_0_0)
+ 

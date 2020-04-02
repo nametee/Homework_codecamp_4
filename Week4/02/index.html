@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Week 4 / 02</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
+</head>
+<body>
+    <div id="root"></div>
+    <div id="root2"></div> 
+    <script > 
+        /*ReactDOM.render(
+            React.createElement('div',null,'Hello World!'),
+            document.getElementById('root')
+        )*/
+        console.log(React.createElement('h1',null,'Hello React!'))
+        console.log(React.createElement('h1','test','Hello React!'))
+        console.log(React.createElement('h1',{A: '1' , B: '2'},'Hello React!'))
+
+        const App = React.createElement('h1',null,'Hello React!')
+        const App2 = React.createElement('h2',null,'Hello World!')
+        const root = document.getElementById('root')
+        const root2 = document.getElementById('root2')
+        ReactDOM.render(App,root)
+        ReactDOM.render(App2,root2)
+    </script>
+</body>
+</html>

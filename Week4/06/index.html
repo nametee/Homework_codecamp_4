@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Week 4 / 06</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        #root {
+            margin: 25%;  
+            border: solid blue; 
+            width: 350px; 
+        }
+        .red {
+            color: red;
+        }
+        .black {
+            color: black;
+        }
+        .pink {
+            color: pink;
+        }
+        label {
+            margin: 0px;
+            font-size: 100px;
+        }
+        span { 
+            margin:  2%;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div> 
+    <script type="text/babel">  
+        class Word extends React.Component {
+            render = () => {
+                const { word } = this.props
+                return (
+                    word.map(item => 
+                        <label className={ item.color }>
+                            { item.text }
+                        </label>
+                    )
+                ) 
+            }
+        } 
+
+        class App extends React.Component {
+            render = () => {  
+                const love = [
+                    {text: 'L', color: 'red'},
+                    {text: '.', color: 'black'},
+                    {text: 'O', color: 'pink'},
+                    {text: '.', color: 'black'},
+                    {text: 'V', color: 'red'},
+                    {text: '.', color: 'black'},
+                    {text: 'E', color: 'pink'}
+                ]
+                return (
+                    <span>
+                        <Word word={ love }/> 
+                    </span>
+                ) 
+            }
+        }
+ 
+        ReactDOM.render(<App />,document.getElementById('root')) 
+    </script>
+</body>
+</html>

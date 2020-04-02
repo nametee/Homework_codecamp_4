@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Week 4 / 08</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        .App {
+            margin: 25%;  
+            border: solid blue; 
+            width: 350px; 
+        } 
+        label {
+            margin: 0px; 
+        }
+        span { 
+            margin:  2%;
+        }
+    </style>
+</head>
+<body>
+    <div id="root" ></div> 
+    <script type="text/babel">  
+        class Word extends React.Component {
+            render = () => {
+                const { word } = this.props
+                return (
+                    word.map(item => 
+                        <label style={{fontSize: item.size, color: item.dotColor }}>
+                            { item.text }
+                        </label>
+                    )
+                ) 
+            }
+        } 
+
+        class App extends React.Component {
+            render = () => {  
+                const { borderColor } = this.props
+                const love = [
+                    {text: 'L', dotColor: 'red', size: '100px'},
+                    {text: '.', dotColor: 'yellow', size: '90px'},
+                    {text: 'O', dotColor: 'pink', size: '80px'},
+                    {text: '.', dotColor: 'green', size: '70px'},
+                    {text: 'V', dotColor: 'red', size: '60px'},
+                    {text: '.', dotColor: 'black', size: '50px'},
+                    {text: 'E', dotColor: 'pink', size: '40px'}
+                ]
+                return (
+                    <div className='App' style={{borderColor: borderColor}}> 
+                        <span >
+                            <Word word={ love }/> 
+                        </span>
+                    </div>
+                ) 
+            }
+        }
+ 
+        ReactDOM.render(<App borderColor='red'/>,document.getElementById('root')) 
+    </script>
+</body>
+</html>

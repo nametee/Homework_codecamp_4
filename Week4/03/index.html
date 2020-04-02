@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Week 4 / 03,04</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
+</head>
+<body>
+    <div id="root"></div>  
+    <script >   
+        const B = React.createElement('b',null,'Forget')
+        const Li = [
+            React.createElement('li',null,'Baby,'), 
+            React.createElement('li',null,B),
+            React.createElement('li',null,'me'),
+            React.createElement('li',null,'not.'),
+        ]  
+        const Ul = React.createElement('ul',null,Li) 
+        const root = document.getElementById('root') 
+        ReactDOM.render(Ul,root) 
+    </script>
+</body>
+</html>

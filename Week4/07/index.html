@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Week 4 / 07</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style> 
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }  
+    </style>
+</head>
+<body>
+    <div id="root"></div> 
+    <script type="text/babel">  
+        const Reality = ( <h1 className='red'>Reality...</h1> )
+        const Matrix = ( <h1 className='blue'>Matrix...</h1> )
+        const answer = prompt('Red or Bule ?')
+        const App = 
+            answer.toString().toUpperCase() === 'RED' ? Reality : 
+            answer.toString().toUpperCase() === 'BLUE' ? Matrix : 
+            '...' 
+ 
+        ReactDOM.render(App,document.getElementById('root')) 
+    </script>
+</body>
+</html>
